@@ -14,8 +14,18 @@
 */
 class Program
 {
+    static void Pokemon()
+    {
+        string[] pokemon = { "Pikachu", "Dracaufeu", "Tortank", "Florizarre", "Ectoplasma", "Ronflex" };
+        for (int i = 0; i < pokemon.Length; i++)
+        {
+            Console.WriteLine( i+1 + " position " + pokemon[i]/*System.Array.IndexOf(pokemon, pokemon[i])*/);
+        }
+        Console.WriteLine(pokemon.Length + " Pokemon en tout.");
+    }
+    
     static void Main(string[] args)
     {
-
+        Pokemon();
     }
 }
